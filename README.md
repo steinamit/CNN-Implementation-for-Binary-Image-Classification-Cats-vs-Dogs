@@ -2,6 +2,7 @@
 
 This Notebook presents a full pipeline for binary image classification using a convolutional neural network (CNN), applied to the "Cats vs Dogs" dataset from Kaggle.
 Notebook Highlights:
+
 •	Extracted and organized real-world image data from compressed archives
 
 •	Programmatically sorted images into class-specific directories based on filename patterns

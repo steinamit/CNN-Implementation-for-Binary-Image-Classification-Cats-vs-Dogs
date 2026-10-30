@@ -1,20 +1,23 @@
-# Image Classification with a CNN (Course Lab)
+# Cats vs Dogs: From Scratch to Transfer Learning
 
-Binary classification of cats vs dogs, comparing a CNN trained from scratch with data augmentation and transfer learning.
+> How far a small CNN gets on its own, and how much data augmentation and a pretrained VGG16 add.
 
-**Context:** deep learning course lab. The notebook is based on code provided in the course, adapted from chapter 8 of *Deep Learning with Python* by François Chollet.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white) ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)
 
-## Data
-A subset of Kaggle's Dogs vs Cats: 2,000 training, 1,000 validation and 2,000 test images, resized to 180×180.
+## Highlights
 
-## Experiments and test accuracy
+- Four models compared on the same 2,000 / 1,000 / 2,000 image split.
+- Test accuracy from 72.0% (from scratch) to 97.8% (VGG16).
+
+## Results
+
 | Model | Test accuracy |
 |---|---|
 | CNN from scratch | 72.0% |
-| CNN with data augmentation and dropout | 84.9% |
+| + data augmentation and dropout | 84.9% |
 | VGG16 feature extraction with augmentation | 97.8% |
 | VGG16 fine-tuned | 97.8% |
 
-The steps added to the provided code: unpacking the archive in Colab and sorting the images into class folders.
+## Credits
 
-**Tools:** Python · TensorFlow / Keras · matplotlib · Google Colab
+Course lab. The code was provided by the course and is adapted from chapter 8 of *Deep Learning with Python* by François Chollet. My additions were unpacking Kaggle's Dogs vs Cats data in Colab and sorting the images into class folders.

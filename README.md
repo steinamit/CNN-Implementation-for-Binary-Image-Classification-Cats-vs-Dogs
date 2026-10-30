@@ -1,20 +1,20 @@
-# CNN-Implementation-for-Binary-Image-Classification-Cats-vs-Dogs
+# Image Classification with a CNN (Course Lab)
 
-This Notebook presents a full pipeline for binary image classification using a convolutional neural network (CNN), applied to the "Cats vs Dogs" dataset from Kaggle.
-Notebook Highlights:
+Binary classification of cats vs dogs, comparing a CNN trained from scratch with data augmentation and transfer learning.
 
-•	Extracted and organized real-world image data from compressed archives
+**Context:** deep learning course lab. The notebook is based on code provided in the course, adapted from chapter 8 of *Deep Learning with Python* by François Chollet.
 
-•	Programmatically sorted images into class-specific directories based on filename patterns
+## Data
+A subset of Kaggle's Dogs vs Cats: 2,000 training, 1,000 validation and 2,000 test images, resized to 180×180.
 
-•	Created a structured directory hierarchy for training, validation, and testing datasets
+## Experiments and test accuracy
+| Model | Test accuracy |
+|---|---|
+| CNN from scratch | 72.0% |
+| CNN with data augmentation and dropout | 84.9% |
+| VGG16 feature extraction with augmentation | 97.8% |
+| VGG16 fine-tuned | 97.8% |
 
-•	Preprocessed and loaded image data using TensorFlow’s image_dataset_from_directory utility
+The steps added to the provided code: unpacking the archive in Colab and sorting the images into class folders.
 
-•	Built and trained a CNN model using Keras, including convolutional, pooling, and dense layers
-
-•	Tracked accuracy and validation loss across multiple epochs during training
-
-This project demonstrates practical knowledge of data handling, dataset structuring, and CNN-based model implementation for visual classification tasks.
-
-This notebook (including the code) was provided as part of a course exercise and used to practice and apply theoretical concepts in a practical way.
+**Tools:** Python · TensorFlow / Keras · matplotlib · Google Colab
